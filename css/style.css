@@ -1,0 +1,376 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/************************************************************************************ 
+									Main Styles
+ ************************************************************************************/
+
+/*
+	//	Colors used in this project
+	#e8cf8d, #E4E4E4
+*/
+
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+	background: #E4E4E4;
+}
+
+.every-section-container{
+	width: 90vw;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+header {
+	width: 100vw;
+	height: 80px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: rgb(228, 228, 228, .8);
+}
+
+header#section-one div.logo{
+	width: 60px;
+	height: 60px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header#section-one div.logo h1{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nav-bar ul {
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-bar ul li{
+	margin-left: 15px;
+}
+
+.nav-bar ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+
+/* temporarily styles for sections  */
+section.showcase {
+	background-image: url('../img/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 90vh;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Section two */
+.section-two{
+	width: 90vw;
+	height: 90vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Section three */
+.section-three{
+	width: 90vw;
+	height: 90vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Section four */
+.section-four{
+	width: 90vw;
+	height: 90vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Section five */
+.section-five{
+	width: 90vw;
+	height: 90vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Footer */
+footer {
+	background: #FFF;
+	z-index: 20;
+	box-shadow: inset 0px 3px 15px 1px #E4E4E4;
+}
+footer .footer-container{
+	width: 90vw;
+	margin: 0 auto;
+	padding: 60px 0 20px 0;
+	display: flex;
+	justify-content: space-around;
+	color: #000;
+}
+
+footer .footer-container div{
+	width:	20%;
+	line-height: 1.4rem;
+
+}
+
+footer .footer-copyright{
+	width: 90vw;
+	margin: 0 auto;
+	background: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	color: #000;
+	border-top: 1px solid #000;
+}
+
+footer .footer-container div:nth-child(2) ul,
+footer .footer-container div:nth-child(3) ul,
+footer .footer-container div:nth-child(4) ul {
+	list-style: none;
+}
+
+footer .footer-social {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer .footer-container > div h1{
+	border-left: 2px solid #e8cf8d;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+footer .footer-container .footer-black-1 p {
+	line-height: 1.4rem;
+}
+
+footer .footer-black-2 ul li {
+	border-bottom: 1px solid grey;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	transition: .5s;
+}
+
+footer .footer-black-2 ul li:hover {
+	border-bottom: 1px solid #e8cf8d;
+}
+
+footer .footer-black-2 ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: grey;	
+	transition: 1s;
+	display: block;
+}
+
+footer .footer-black-2 ul li a:hover {
+	color: black;	
+}
+
+footer .footer-black-3 ul {
+	margin-top: 10px;
+}
+
+footer .footer-black-3 ul li {
+	margin-top: 5px;
+}
+
+footer .footer-black-3 ul li i{
+	width: 20px;
+	height: 20px;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+footer .footer-black-4 ul {
+	margin-top: 20px;
+}
+
+footer .footer-black-4 ul li i{
+	width: 20px;
+	height: 20px;
+	font-size: 30px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+footer .footer-black-4 ul li i:hover{
+	color: #e8cf8d;
+}
+/************************************************************************************ 
+									Responsive design
+ ************************************************************************************/
+
+/*Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+	
+	/* Footer */
+	footer .footer-container {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	footer .footer-container div{
+		margin-left: 0;
+		margin-top: 20px;
+		width: 40%;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+
+	/* Footer */
+	footer .footer-container {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	footer .footer-container div{
+		margin-left: 0;
+		margin-top: 30px;
+		width: 80%;
+	}
+}
+
+/* Small devices (landscape phones, 380px and up) */
+@media screen and (max-width: 380px) {
+
+}
